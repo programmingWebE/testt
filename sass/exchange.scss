@@ -1,0 +1,148 @@
+@import 'responsive.sсss';
+
+.exchange {
+	padding-top: 40px;
+	padding-bottom: 20px;
+	&__title {
+		font-size: 26px;
+		line-height: 1.2;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: normal;
+		padding-bottom: 30px;
+		@include media(md) {
+			font-size: 22px;
+		}
+	}
+
+	&__wrap {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		@include media(sm) {
+			display: block;
+		}
+	}
+
+	&__select {
+		max-width: 360px;
+		max-height: 48px;
+		width: 100%;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		option {
+			background-size: 16px 16px;
+			background-position: left center;
+		}
+	}
+
+	&__btn {
+		display: block;
+		cursor: pointer;
+		font: inherit;
+		width: 100%;
+		max-width: 200px;
+		font-size: 16px;
+		line-height: 1.2;
+		color: #fff;
+		background-color: #1c85e8;
+		border: none;
+		outline: none;
+		padding: 14px 5px;
+		padding-bottom: 15px;
+		border-radius: 4px;
+		margin-bottom: 20px;
+		transition: 0.3s background-color;
+		&:hover {
+			background-color: #0b3359;
+		}
+	}
+	
+}
+
+$select-height: 48px; 
+
+.select-hidden {
+	opacity: 0;
+	visibility: hidden;
+	padding-right: 10px;
+}
+
+.select {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	font-size: 16px;
+	color: #394247;
+	width: 100%;
+	height: $select-height;
+}
+
+.select-styled {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	color: #394247;
+	background-color: #fff;
+	font-size: 16px;
+	line-height: 1.2;
+	user-select: none;
+	border: 2px solid #1c85e8;
+	border-radius: 4px 4px 0 0;
+	padding: 14px 20px;
+	padding-left: 37px;	
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+	background-repeat: no-repeat;
+	background-position: left 13px center;
+
+	  &:after {
+	    content:"";
+	    width: 8px;
+	    height: 8px;
+	    border-right: 1px solid #9f024e;
+	    border-bottom: 1px solid #9f024e;
+	    position: absolute;
+	    top: 18px;
+	    right: 20px;
+	    transform: rotate(45deg);
+	  }
+
+}
+
+.select-options {
+	display: none;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	left: 0;
+	z-index: 999;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 2px solid #1c85e8;
+	border-top: 0px;
+	padding-top: 10px;
+	border-radius: 4px;
+	li {
+		font-size: 16px;
+		line-height: 1.2;
+		color: #394247;
+		user-select: none;
+		padding: 7px 20px;
+		padding-left: 37px;
+		background-size: 16px 16px;
+		background-color: #fff;
+		background-position: left 12px center;
+		background-repeat: no-repeat;
+	   &:hover {
+		   	background-color: #f3f5f8;
+	    }
+
+	    &[rel="hide"] {
+	      display: none;
+	    }
+	  }
+}

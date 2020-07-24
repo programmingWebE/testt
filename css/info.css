@@ -1,0 +1,122 @@
+.info {
+	background-image: url(../img/bg-info.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: top center;
+}
+
+.info__title {
+	font-size: 36px;
+	line-height: 1.2;
+	color: #fff;
+	text-transform: uppercase;
+	padding-top: 125px;
+	padding-bottom: 4px;
+}
+
+.info__text {
+	max-width: 605px;
+	padding-bottom: 45px;
+}
+
+.info__text p {
+	font-size: 18px;
+	line-height: 1.3;
+	color: #fff;
+}
+
+.info__inner {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding-bottom: 55px;
+}
+
+.info__star {
+	width: 32px;
+	height: 32px;
+	fill: #1ce83f;
+	margin-right: 7px;
+	margin-bottom: 15px;
+}
+
+.info__block {
+	font-size: 20px;
+	line-height: 1.2;
+	color: #fff;
+	margin-right: 16px;
+	font-family: Microsoft Sans Serif;
+	margin-bottom: 15px;
+}
+
+.info__wrap {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	margin-right: 28px;
+	margin-bottom: 15px;
+}
+
+.info__item {
+	width: 23px;
+	height: 23px;
+	fill: #fff;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background-color: #1ce83f;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+	margin-right: 5px;
+}
+
+.info__item svg {
+	display: block;
+	width: 16px;
+	height: 16px;
+}
+
+.info__link {
+	font-size: 18px;
+	line-height: 1.3;
+	color: #fff;
+	margin-top: 2px;
+	margin-bottom: 15px;
+}
+
+.info__link a {
+	display: inline-block;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 2px;
+}
+
+@media screen and (max-width: 780px) {
+
+.info__title {
+	font-size: 25px;
+	padding-bottom: 7px;
+	padding-top: 85px;
+}
+
+}
+

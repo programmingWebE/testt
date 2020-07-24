@@ -1,0 +1,41 @@
+@import 'responsive.sсss';
+
+.partners {
+	padding: 0 60px;
+	@include media(sm) {
+		padding: 0px 10px;
+	}
+	&__wrap {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin: 0 -18px;
+	}
+
+	&__item {
+		display: block;
+		width: calc(100% / 7 - 36px);
+		margin: 0 18px;
+		margin-bottom: 22px;
+		transition: 0.3s transform;
+		@include media(md) {
+			width: calc(100% / 5 - 36px);
+		}
+		@include media(sm) {
+			width: calc(100% / 4 - 36px);
+		}
+		@include media(xs) {
+			width: calc(100% / 3 - 36px);
+		}
+		@include media(xxs) {
+			width: calc(100% / 2 - 36px);
+		}
+		img {
+			display: block;
+			width: 100%;
+		}
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+}

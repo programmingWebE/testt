@@ -1,0 +1,62 @@
+@import 'responsive.sсss';
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 100vh;
+	overflow-x: hidden;
+	color: #323232;
+	background-color: #ffffff;
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: normal;
+	font-style: normal;
+	font-family: Verdana;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+	
+.container {
+	max-width: 1142px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 10px;
+	&--reviews {
+		max-width: 880px;
+	}
+
+	&--exchange {
+		max-width: 980px;
+	}
+
+	&--header {
+		@include media(smdx) {
+			padding: 0px;
+		}
+	}
+}
+
+@import 'reset';
+@import 'header';	
+@import 'info';
+@import 'partners';
+@import 'exchange';
+@import 'advantages';
+@import 'reserve';
+@import 'about';
+@import 'start';
+@import 'reviews';
+@import 'footer';
